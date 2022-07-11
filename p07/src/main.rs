@@ -10,6 +10,22 @@ fn main() {
 
 fn get_prime_at(i: u64) -> u64 {
     13
+};
+
+fn get_primes(l: u64) {
+    let mut primes: Vec<u64> = Vec::new();
+    for i in 2..=l {
+        if primes[i] == 1 {
+            for j in i..=l {
+                if i*j < l {
+                    primes[i*j] = 0;
+                };
+            };
+        }else {
+            break;
+        };
+    };
+    primes
 }
 
 #[test]
