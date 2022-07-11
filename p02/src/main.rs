@@ -49,5 +49,11 @@ fn test_even_fibs() {
 
 #[test]
 fn test_case() {
+    assert_eq!(even_fibs(10).iter().sum::<u64>(), 10);
+}
+
+
+#[test]
+fn answer_case() {
     assert_eq!(even_fibs(4_000_000).iter().sum::<u64>(), 4613732);
 }

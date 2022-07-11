@@ -9,7 +9,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
 fn main() {
-    println!("{} is the answer", get_sum_multiples(1000));
+    println!("{}", get_sum_multiples(1000));
 }
 
 fn get_sum_multiples(l: i32) -> i32 {
@@ -20,6 +20,11 @@ fn get_sum_multiples(l: i32) -> i32 {
         }
     }
     sum
+}
+
+#[test]
+fn test_get_sum_multiples() {
+    assert_eq!(get_sum_multiples(10), 23);
 }
 
 #[test]

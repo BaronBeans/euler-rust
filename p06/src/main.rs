@@ -47,3 +47,13 @@ fn test_sum_of_square() {
 fn test_square_of_sum() {
     assert_eq!(square_of_sum(10), 3025);
 }
+
+#[test]
+fn test_case() {
+    assert_eq!(find_answer(10), 2640)
+}
+
+#[test]
+fn answer_case() {
+    assert_eq!(find_answer(100), 25164150)
+}

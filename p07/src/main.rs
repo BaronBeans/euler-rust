@@ -5,7 +5,7 @@ What is the 10 001st prime number?
 */
 
 fn main() {
-    println!("Hello, world!");
+    println!("{}", get_prime_at(10));
 }
 
 fn get_prime_at(i: u64) -> u64 {

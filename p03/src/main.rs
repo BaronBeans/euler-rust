@@ -35,11 +35,21 @@ fn get_prime_factors(num: u64) -> Vec<u64> {
 #[test]
 fn test_get_prime_factors() {
     assert_eq!(get_prime_factors(13195), [5, 7, 13, 29]);
-    assert_eq!(get_max_prime_factor(13195), 29);
 }
 
 #[test]
+fn test_get_max_prime_factor() {
+    assert_eq!(get_max_prime_factor(13195), 29);
+}
+
+
+#[test]
 fn test_case() {
-    assert_eq!(get_prime_factors(600851475143), [71, 839, 1471, 6857]);
+    assert_eq!(get_prime_factors(13195), [5, 7, 13, 29])
+}
+
+
+#[test]
+fn answer_case() {
     assert_eq!(get_max_prime_factor(600851475143), 6857);
 }
